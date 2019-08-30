@@ -52,7 +52,7 @@ class StringMe:
             if char == "(":
                 stack.append(char)
             elif char == ")":
-                if len(stack) == 0 or stack.pop() != "(":
+                if len(stack) == 0 or stack.pop() != ")":
                     return False
         return len(stack) == 0
 
