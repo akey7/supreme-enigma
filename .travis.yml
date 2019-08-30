@@ -1,6 +1,3 @@
 language: python
 script:
   - pytest
-branches:
-  only:
-  - master
