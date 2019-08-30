@@ -18,5 +18,5 @@ def test_reflect():
 ])
 def test_palindrome(test, expected):
     instance = StringMe(test)
-    actual = instance.isPalindrome()
+    actual = instance.is_palindrome()
     assert expected == actual

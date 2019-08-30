@@ -2,7 +2,7 @@ class StringMe:
     def __init__(self, source):
         self.source = source
 
-    def isPalindrome(self, test_me=None):
+    def is_palindrome(self, test_me=None):
         if test_me is None:
             test_me = self.source
 
@@ -11,7 +11,10 @@ class StringMe:
         elif test_me[0] != test_me[-1]:
             return False
         else:
-            return self.isPalindrome(test_me[1:-1])
+            return self.is_palindrome(test_me[1:-1])
+
+    def isBalanced(self):
+        pass
 
     def reflect(self):
         return self.source
