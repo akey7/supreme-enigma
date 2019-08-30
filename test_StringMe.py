@@ -6,8 +6,16 @@ def test_reflect():
     instance = StringMe(expected)
     actual = instance.reflect()
     assert expected == actual
-        
-@pytest.mark.parametrize('test, expected', [("", True)])
+
+
+@pytest.mark.parametrize('test, expected', [
+    ("", True),
+    (" ", True),
+    ("x", True),
+    ("aba", True),
+    ("yvvy", True),
+    ("xyz", False)
+])
 def test_palindrome(test, expected):
     instance = StringMe(test)
     actual = instance.isPalindrome()
